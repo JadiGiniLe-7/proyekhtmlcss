@@ -1,0 +1,144 @@
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif; 
+  background: linear-gradient(90deg, #628141, #8BAE66);
+  color: white;
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #1B211A;
+  padding: 20px 10px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.header a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px 20px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+  transition: 0.5s;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: white;
+  color: #061E29;
+  transform: rotate(10deg);
+}
+
+.header a.active {
+  background-color: white;
+  color: #061E29;
+}
+
+.header-right {
+  float: right;
+  gap: 25px;
+  display: flex;
+}
+
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+ .header-right {
+	float: none;
+}
+}
+
+.sec {
+	padding-left: 40px;
+}
+
+
+
+.main {
+	padding: 15px;
+	text-align: center;
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+	border-radius: 10px;
+}
+
+.footer {
+	background-color: #1B211A;
+	text-align: center;
+	padding: 10px;
+	margin-top: 7px;
+}
+
+section h1 {
+	font-size: 4.2vw;
+}
+
+section p {
+	font-size: 2.1vw;
+	padding-bottom: 1000px;
+}
+
+.certificate {
+	width: 350px;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	text-align: center;
+	transition: 0.3s;
+	margin: 15px;
+	background-color: #1B211A;
+	color: white;
+}
+
+.certificate-img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	padding: 15px;
+	align-items: center; 
+}
+
+.certificate-btn {
+	background-color: #007bff;
+	color: white;
+	border: none;
+	padding: 10px 15px;
+	border-radius: 5px;
+	cursor: pointer;
+	margin: 10px 0 15px;
+}
+
+.certificate-title {
+	font-size: 18px;
+	margin: 10px 0 5px;
+}
+
+.certificate-subtitle {
+	font-size: 15px;
+	color: #555;
+	padding: 0 10px;
+}
